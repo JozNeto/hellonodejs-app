@@ -31,9 +31,9 @@ spec:
         # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
         # Replace $GCLOUD_PROJECT with your project ID.
         image: us-east1-docker.pkg.dev/my-project-test-347016/hello-rpo-nodejs/hellonodejs-app-gke:latest
-        # This app listens on port 80001 for web traffic by default.
+        # This app listens on port 8001 for web traffic by default.
         ports:
-        - containerPort: 80001
+        - containerPort: 8001
         env:
           - name: PORT
-            value: "80001"
+            value: "8001"
